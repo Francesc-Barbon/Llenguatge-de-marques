@@ -1,0 +1,94 @@
+/*El fons de totes les pàgines es marró*/
+body{
+    background-color: burlywood;
+}
+/*Posa de color vermell els dos encapçalaments dins el main*/
+main h2{
+    color:red;
+}
+/*La imatge te un borde negre del header*/
+[alt="fletxes"]{
+    border:2px solid black;
+    margin-left: -8px;
+}
+/*Regles que ordenen la llista d'enllaços de manera horitzontal enlloc de vertical,
+els enllasos dins la llista amb nom de classe 'enllasos' tornaran negres 
+quan se li passi el mouse per damunt, elimina l'underline i la llista està ajustada
+a l'esquerra*/
+li{
+    display:inline;
+    text-align:left;
+    padding: 5px;
+}
+
+ul.enllasos a:hover{
+    color:black;
+    text-decoration: underline;
+}
+ul.enllasos a{
+    text-decoration: none;
+}
+
+ul{
+    border:2px solid black;
+    display:inline;
+    margin-left: -45px;
+}
+ul.enllasos{
+    background-color: yellow;
+}
+
+/*Despres dels paragrafs hi ha una imatge amb el símbol d'audio i de video alineat amb el text*/
+#paragraf1::after{
+    content: "";
+    background-image: url(imatges/audio.png);
+    background-size: cover;
+    display:inline-block;
+    margin-left: 5px;
+    margin-bottom: -3px;
+    height: 15px;
+    width: 15px;
+}
+
+#paragraf2::after{
+    content:"";
+    background-image: url(imatges/video2.png);
+    background-size: cover;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: -3px;
+    height: 20px;
+    width: 20px;
+
+}
+/*Estils per a la pàgina de taules*/
+/*S'ha fet la taula mes gran i s'han afegit clases per a cada una de les columnes*/
+#titols{
+    color:red;
+}
+.ciutats{
+    color:green;
+}
+.continents{
+    color:yellow;
+}
+.paisos{
+    color:purple;
+}
+td{
+    font-size: 32pt;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+ }
+
+ /*Estils per a la pàgina de videos*/
+ #body_videos{
+    background-image: url(imatges/Fuji.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+ }
+
+
